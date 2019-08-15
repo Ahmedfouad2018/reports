@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "finalprofit", "Report Project1\finalprofit.rptproj", "{E8C40B37-DB61-4A33-BE49-4898E51490C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Debug|Default.ActiveCfg = Debug
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Debug|Default.Build.0 = Debug
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Debug|Default.Deploy.0 = Debug
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.DebugLocal|Default.Build.0 = DebugLocal
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Development|Default.ActiveCfg = DebugLocal
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Development|Default.Build.0 = DebugLocal
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Development|Default.Deploy.0 = DebugLocal
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Release|Default.ActiveCfg = Release
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Release|Default.Build.0 = Release
+		{E8C40B37-DB61-4A33-BE49-4898E51490C6}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

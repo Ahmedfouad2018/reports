@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>SELECT Dimension.Customer.Customer, Dimension.Customer.[Buying Group], Fact.Sale.[WWI Invoice ID], Fact.Sale.Description, Fact.Sale.[Total Excluding Tax], Dimension.Date.[Calendar Year], City_1.Region, City_1.Continent, City_1.City, 
+                  City_1.Location, Fact.Sale.[Invoice Date Key], Dimension.Customer.[Customer Key]
+FROM     Dimension.Customer INNER JOIN
+                  Fact.Sale ON Dimension.Customer.[Customer Key] = Fact.Sale.[Customer Key] AND Dimension.Customer.[Customer Key] = Fact.Sale.[Bill To Customer Key] INNER JOIN
+                  Dimension.Date ON Fact.Sale.[Invoice Date Key] = Dimension.Date.Date AND Fact.Sale.[Delivery Date Key] = Dimension.Date.Date INNER JOIN
+                  Dimension.City AS City_1 ON Fact.Sale.[City Key] = City_1.[City Key]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Customer">
+        <DataField>Customer</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Buying_Group">
+        <DataField>Buying Group</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="WWI_Invoice_ID">
+        <DataField>WWI Invoice ID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Description">
+        <DataField>Description</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Total_Excluding_Tax">
+        <DataField>Total Excluding Tax</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Calendar_Year">
+        <DataField>Calendar Year</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Region">
+        <DataField>Region</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Continent">
+        <DataField>Continent</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="City">
+        <DataField>City</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Location">
+        <DataField>Location</DataField>
+        <rd:TypeName>Microsoft.SqlServer.Types.SqlGeography</rd:TypeName>
+      </Field>
+      <Field Name="Invoice_Date_Key">
+        <DataField>Invoice Date Key</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Customer_Key">
+        <DataField>Customer Key</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

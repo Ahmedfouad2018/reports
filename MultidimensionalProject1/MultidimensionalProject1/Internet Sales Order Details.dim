@@ -1,0 +1,202 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ba42667b-e6c8-4da2-985b-0ff443519c4d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fact Internet Sales</ID>
+  <Name>Internet Sales Order Details</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="171">
+            <Shape Id="Fact Internet Sales" Expanded="true">
+              <Attributes>
+                <Attribute Id="Fact Internet Sales" />
+                <Attribute Id="Carrier Tracking Number" />
+                <Attribute Id="Customer PO Number" />
+                <Attribute Id="SalesOrderLineNumber" />
+                <Attribute Id="SalesOrderNumber" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b23acb2d-46ba-47e1-aa4e-5fe91bf18bc4">
+    <DataSourceViewID>MultidimensionalProject1</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="e8352add-f805-4579-988b-a8a5aa56ff33">
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+  </ErrorConfiguration>
+  <StorageMode>Rolap</StorageMode>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="413fc068-c661-416c-b639-2eee1e8a871b">
+      <ID>Fact Internet Sales</ID>
+      <Name>Internet Sales Order</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>60398</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3d0d97d6-88a8-466c-86c7-8f00b15f637c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0d78c73-1428-4299-8008-a09f64aca323">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Internet_Sales_Order</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="1209cb96-a84a-44b8-b9b6-485092bcb22c">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a5c64ab-c737-428a-a387-c17836feccd1">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Internet_Sales_Order1</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c5f3031a-a600-4ce5-91d2-b40616bea3e5">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0b90770d-8052-4ffb-888a-1d166f1936a4">
+          <TableID>Internet_Sales_Order_Details</TableID>
+          <ColumnID>Internet_Sales_Order_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="682b41b7-79c4-4481-bced-0cc8cad0e747">
+          <AttributeID>Carrier Tracking Number</AttributeID>
+          <Name>Carrier Tracking Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d89c1983-8abf-43e3-95dd-c1d3d6d10dfe">
+          <AttributeID>Customer PO Number</AttributeID>
+          <Name>Customer PO Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ebef9408-0a23-476c-9eea-65a5d57c6086">
+          <AttributeID>SalesOrderNumber</AttributeID>
+          <Name>Sales Order Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ef812d4-b44c-426d-8874-e4e5113b2784">
+          <AttributeID>SalesOrderLineNumber</AttributeID>
+          <Name>Sales Order Line</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ba4ea690-ff69-4277-b97c-f2bb77362a50">
+      <ID>Carrier Tracking Number</ID>
+      <Name>Carrier Tracking Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="426e4deb-ded1-49d7-9a7e-4b03e114ec33">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="456405a3-cd3f-425d-9ba3-877cacc0cf93">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Carrier_Tracking_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ab58a4e2-5b77-4f64-99fa-1c56dd79ab59">
+      <ID>Customer PO Number</ID>
+      <Name>Customer PO Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d9720e4f-b476-40d6-b318-93670ca821c7">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9935d714-f005-4baf-ad8b-f8a92ee99010">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Customer_PO_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2c5672d5-d271-4e13-b5e2-e04c5c5028a2">
+      <ID>SalesOrderNumber</ID>
+      <Name>Sales Order Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="87004221-58be-47c0-8c51-4c516cb62278">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e75e8eb-6360-499a-9165-ff543992837c">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Sales_Order_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9065448-7de1-44dc-854f-358a5facdfaf">
+      <ID>SalesOrderLineNumber</ID>
+      <Name>Sales Order Line</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="49dfc6fd-d262-4789-8ea8-ccbce1adcb16">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cde859c-1a52-450d-a554-93f0f6273ca3">
+            <TableID>Internet_Sales_Order_Details</TableID>
+            <ColumnID>Sales_Order_Line</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All Internet Sales Orders</AttributeAllMemberName>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,175 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="34e8a39e-3e60-46ff-b339-29c2569318a6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Account</ID>
+  <Name>Account</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="10e3cb07-12e5-49d1-b00b-b0e8d81632ea">
+    <DataSourceViewID>MultidimensionalProject1</DataSourceViewID>
+  </Source>
+  <Type>Accounts</Type>
+  <ErrorConfiguration dwd:design-time-name="6126bbf0-965b-45fb-bee5-49646be0abbf">
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="8ef5fb99-b6c5-41c2-88bf-7f67d972acd6">
+      <ID>Parent Account Key</ID>
+      <Name>Accounts</Name>
+      <Type>Account</Type>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b2afb803-e195-4c90-88af-66b83b3b27a3">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4b05499-1be3-464c-bee8-39ac9fe87865">
+            <TableID>Account</TableID>
+            <ColumnID>Accounts</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <DefaultMember>[Account].[Accounts].[Account Level 01].&amp;[47]</DefaultMember>
+      <NamingTemplate>Account Level *;</NamingTemplate>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <CustomRollupColumn dwd:design-time-name="413eb2dc-ab06-4da3-90eb-9b8ddce34ce1">
+        <DataType>WChar</DataType>
+        <DataSize>300</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="09f04e85-4498-4335-b6f7-147ed83957e3">
+          <TableID>Account</TableID>
+          <ColumnID>Accounts_CustomRollup</ColumnID>
+        </Source>
+      </CustomRollupColumn>
+      <UnaryOperatorColumn dwd:design-time-name="052c61b4-c1fc-4b68-ac2b-309fa9e6e233">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="942a5452-e2c9-45d1-a31e-21d361f9f451">
+          <TableID>Account</TableID>
+          <ColumnID>Accounts_UnaryOperator</ColumnID>
+        </Source>
+      </UnaryOperatorColumn>
+      <IsAggregatable>false</IsAggregatable>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2940bedf-bbb2-49ec-9a8c-ce9601778c9a">
+      <ID>Account Description</ID>
+      <Name>Account</Name>
+      <Type>AccountName</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5acb6712-147f-4b58-9e10-60dd46a61809">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02ba5672-896e-4aa3-93fc-8e421853e1d4">
+            <TableID>Account</TableID>
+            <ColumnID>Account</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="dbdfe678-fa22-42d9-8ef1-04da5cd593da">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2ff33263-dc1a-4d69-a473-ad3f3d17e4e6">
+          <TableID>Account</TableID>
+          <ColumnID>Account_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="564a39bd-715e-4762-8b71-7d36c0511c0a">
+          <AttributeID>Parent Account Key</AttributeID>
+          <Name>Accounts</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ac1a5cb3-6f4b-4b08-9840-4a9649ec1611">
+          <AttributeID>Account Type</AttributeID>
+          <Name>Account Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="07dba26c-c9ac-474a-b4a9-d0a4bfdd781f">
+          <AttributeID>AccountKey</AttributeID>
+          <Name>Account Number</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>AttributeKey</OrderBy>
+      <OrderByAttributeID>AccountKey</OrderByAttributeID>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c1168fed-094a-4938-a377-6faf878945c4">
+      <ID>Account Type</ID>
+      <Name>Account Type</Name>
+      <Type>AccountType</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb59c77a-ce17-427a-bdb3-677edbd1c85c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a79be8f5-076d-4cc7-9cbc-88a5783c4c31">
+            <TableID>Account</TableID>
+            <ColumnID>Account_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33cf730f-e6f7-4086-b270-077c0e6e74a8">
+      <ID>AccountKey</ID>
+      <Name>Account Number</Name>
+      <Type>AccountNumber</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6e912917-a0a5-419e-9b94-335f5b9b77c5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="254ef3cc-79be-4443-86d9-dbdc3fd13ccc">
+            <TableID>Account</TableID>
+            <ColumnID>Account_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All Accounts</AttributeAllMemberName>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

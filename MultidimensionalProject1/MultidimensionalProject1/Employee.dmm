@@ -1,0 +1,323 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9c156502-4584-42fb-8929-f02f06a91972" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Employee</ID>
+  <Name>Employee</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="89f04efd-ac49-49b5-bc3f-385d9691950e">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Adventure Works</CubeID>
+    <CubeDimensionID>Dim Employee</CubeDimensionID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="296c0287-4a73-4cd0-b24b-4024bf08e2e7">
+      <ID>Phone</ID>
+      <Name>Phone</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="a1b73078-84a3-4c8c-bad0-bd76b93a8603">
+        <CubeID>Adventure Works</CubeID>
+        <CubeDimensionID>Dim Employee</CubeDimensionID>
+        <AttributeID>Phone</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2074ced5-c068-4c8b-9cc1-78af80e8a8d4">
+      <ID>Discount Amount</ID>
+      <Name>Discount Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="0ac9cb96-cae2-4bdc-aee6-da3fa5d50cdb">
+        <MeasureID>Discount Amount 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4ae05165-b2ed-4c9c-b7b0-a08464b608ba">
+      <ID>Reseller Extended Amount</ID>
+      <Name>Reseller Extended Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="c8d1700d-6e14-4f60-bd0f-30cb67aa9754">
+        <MeasureID>Extended Amount 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c4f5be9e-80d5-413f-a187-dfa638911111">
+      <ID>Reseller Freight Cost</ID>
+      <Name>Reseller Freight Cost</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="c0a3524a-09c4-4fb1-9b26-7fd236378538">
+        <MeasureID>Freight 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="d79bdc6b-a406-4f21-832a-fc452cfcac70">
+      <ID>Reseller Order Count</ID>
+      <Name>Reseller Order Count</Name>
+      <Type>Text</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="2a3d33e5-4675-492f-8980-3e07ceab3feb">
+        <MeasureID>Sales Order Number 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="eaf348e8-6d51-42d7-9768-2696aeec7c59">
+      <ID>Reseller Order Quantity</ID>
+      <Name>Reseller Order Quantity</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="28bd8f36-c935-419c-945d-001558c3a810">
+        <MeasureID>Order Quantity 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="49b73b15-1cad-4043-8363-8b3da9962627">
+      <ID>Reseller Sales Amount</ID>
+      <Name>Reseller Sales Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="cf29bb82-36bc-4d73-ba6f-f722171e6d70">
+        <MeasureID>Sales Amount 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ca5163af-8e58-4b4a-b9db-3b5a653abf90">
+      <ID>Reseller Standard Product Cost</ID>
+      <Name>Reseller Standard Product Cost</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="acfcf581-b434-4a65-b793-0b7d03d1994d">
+        <MeasureID>Product Standard Cost 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b10db6d2-5bd1-4db2-a299-6fe6f977498c">
+      <ID>Reseller Tax Amount</ID>
+      <Name>Reseller Tax Amount</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="7b0815c8-e5c6-4006-8bbd-8cf97c034019">
+        <MeasureID>Tax Amt 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dfb7a90e-fc94-4eb0-bf06-3555c5ad510a">
+      <ID>Reseller Total Product Cost</ID>
+      <Name>Reseller Total Product Cost</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="ed9f0ef3-9e6c-463f-9ef3-cb265579aba2">
+        <MeasureID>Total Product Cost 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="83094b08-eefc-492d-aed6-026be40b7e16">
+      <ID>Reseller Transaction Count</ID>
+      <Name>Reseller Transaction Count</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="f4109c12-3958-40e1-b61c-7f72b18c5f8e">
+        <MeasureID>Product Key 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a78f0f36-0fe1-47e1-aff5-fe691972389c">
+      <ID>Reseller Unit Price</ID>
+      <Name>Reseller Unit Price</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="153f87df-317c-4644-a2f9-c0755c7e8020">
+        <MeasureID>Unit Price 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f723b979-257f-4e18-9484-a4f60679a309">
+      <ID>Sales Amount Quota</ID>
+      <Name>Sales Amount Quota</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="0f986da0-70a5-4470-bba0-8219f27e28bf">
+        <MeasureID>Sales Amount Quota</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a7827ea5-ae58-4a8a-9818-3b578195237e">
+      <ID>Unit Price Discount Percent</ID>
+      <Name>Unit Price Discount Percent</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="47f9cc5d-6111-4386-b5bd-40f2c0dea8a2">
+        <MeasureID>Unit Price Discount Pct 1</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="bc810e88-ad37-46d2-9ea4-53342be548d9">
+      <ID>Employee</ID>
+      <Name>Employee</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="fc24d5ec-a0df-4f6c-8ced-79612391df10">
+          <ID>Phone</ID>
+          <Name>Phone</Name>
+          <SourceColumnID>Phone</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="08072187-20cc-497a-8876-5a73f154889c">
+          <ID>Discount Amount</ID>
+          <Name>Discount Amount</Name>
+          <SourceColumnID>Discount Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f334c15a-4cc4-4957-9b28-b5b5ccf5204c">
+          <ID>Reseller Extended Amount</ID>
+          <Name>Reseller Extended Amount</Name>
+          <SourceColumnID>Reseller Extended Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="5561ba51-1e57-48c6-bc89-273f2e61be39">
+          <ID>Reseller Freight Cost</ID>
+          <Name>Reseller Freight Cost</Name>
+          <SourceColumnID>Reseller Freight Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="62b1b420-1374-488f-af34-ce8f0d20728c">
+          <ID>Reseller Order Count</ID>
+          <Name>Reseller Order Count</Name>
+          <SourceColumnID>Reseller Order Count</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f36c0552-294a-4f72-8741-739b32549cd9">
+          <ID>Reseller Order Quantity</ID>
+          <Name>Reseller Order Quantity</Name>
+          <SourceColumnID>Reseller Order Quantity</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="79949dfb-b49b-4034-9bf8-3f153421e75d">
+          <ID>Reseller Sales Amount</ID>
+          <Name>Reseller Sales Amount</Name>
+          <SourceColumnID>Reseller Sales Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="f67ce34e-6406-46b4-be3d-dbd91a204f2d">
+          <ID>Reseller Standard Product Cost</ID>
+          <Name>Reseller Standard Product Cost</Name>
+          <SourceColumnID>Reseller Standard Product Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="40354bf2-628e-4ba0-bc26-0b1858f49ca8">
+          <ID>Reseller Tax Amount</ID>
+          <Name>Reseller Tax Amount</Name>
+          <SourceColumnID>Reseller Tax Amount</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="a2f224b5-d444-4497-9c43-ed91d48c022e">
+          <ID>Reseller Total Product Cost</ID>
+          <Name>Reseller Total Product Cost</Name>
+          <SourceColumnID>Reseller Total Product Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d1dda783-6803-4e97-af3c-ab6f66380fbb">
+          <ID>Reseller Transaction Count</ID>
+          <Name>Reseller Transaction Count</Name>
+          <SourceColumnID>Reseller Transaction Count</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="52613175-c82a-4bc9-bede-37b0b92c250f">
+          <ID>Reseller Unit Price</ID>
+          <Name>Reseller Unit Price</Name>
+          <SourceColumnID>Reseller Unit Price</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="8419a583-a85a-4b34-b035-5ac964bece77">
+          <ID>Sales Amount Quota</ID>
+          <Name>Sales Amount Quota</Name>
+          <SourceColumnID>Sales Amount Quota</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="4bb64fa8-c175-4378-a06c-6b0cbddf5b14">
+          <ID>Unit Price Discount Percent</ID>
+          <Name>Unit Price Discount Percent</Name>
+          <SourceColumnID>Unit Price Discount Percent</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

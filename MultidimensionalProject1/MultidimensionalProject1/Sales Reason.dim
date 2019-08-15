@@ -1,0 +1,147 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c5304ca3-efd6-479a-8da6-0f8cc8bcde5a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sales Reason</ID>
+  <Name>Sales Reason</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="137">
+            <Shape Id="Dim Sales Reason" Expanded="false">
+              <Attributes>
+                <Attribute Id="Dim Sales Reason" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sales Reason Reason Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sales Reason Reason Type" />
+              </Attributes>
+              <Position x="196" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8863c8ca-e17c-46d8-a995-9d69a822ab94">
+    <DataSourceViewID>MultidimensionalProject1</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fdbe455e-d4b9-4d6b-ae6b-8d36f23239f9">
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="d69033e7-32a9-414b-8a4e-a5be351c5974">
+      <ID>Dim Sales Reason</ID>
+      <Name>Sales Reason</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b8e9440-104e-429c-bc91-83df602ed977">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1efbea0c-485c-48bd-8479-5c1c60385269">
+            <TableID>Sales_Reason</TableID>
+            <ColumnID>Sales_Reason</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ce28eb3c-e0d3-4c90-b626-240153e313cc">
+        <DataType>WChar</DataType>
+        <NullProcessing>Error</NullProcessing>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="16390212-5539-437b-9435-d92fb0b3ce5d">
+          <TableID>Sales_Reason</TableID>
+          <ColumnID>Sales_Reason_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9cdd1e23-a170-41b0-942a-e109fcef6ad3">
+          <AttributeID>Sales Reason Reason Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Sales Reason Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="593d4084-92dd-46d0-9067-38485052b665">
+      <ID>Sales Reason Reason Type</ID>
+      <Name>Sales Reason Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6a7ce3ee-36b1-4373-baf7-13048d8f0d4e">
+          <DataType>WChar</DataType>
+          <NullProcessing>Error</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f101826f-a526-4da6-8bf3-78897c77cd53">
+            <TableID>Sales_Reason</TableID>
+            <ColumnID>Sales_Reason_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All Sales Reasons</AttributeAllMemberName>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="d8fdcdfe-08fa-4e58-bded-04cc0103e92f">
+      <ID>Hierarchy</ID>
+      <Name>Sales Reasons</Name>
+      <AllMemberName>All Sales Reasons</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="f8f121a0-c34a-4e17-ab13-3304d6506995">
+          <ID>Sales Reason Type</ID>
+          <Name>Sales Reason Type</Name>
+          <SourceAttributeID>Sales Reason Reason Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="880c11e6-4e85-4a7c-b468-abdfc7e5f135">
+          <ID>Sales Reason</ID>
+          <Name>Sales Reason</Name>
+          <SourceAttributeID>Dim Sales Reason</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

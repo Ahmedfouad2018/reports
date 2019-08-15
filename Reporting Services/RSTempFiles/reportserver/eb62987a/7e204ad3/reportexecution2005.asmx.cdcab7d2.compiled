@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="2" virtualPath="/ReportServer/ReportExecution2005.asmx" hash="2833cf67" filehash="ffffc8ca9faa21fe" flags="130000" assembly="ReportingServicesWebServer" type="Microsoft.ReportingServices.WebServer.ReportExecutionService">
+    <filedeps>
+        <filedep name="/ReportServer/ReportExecution2005.asmx" />
+    </filedeps>
+</preserve>

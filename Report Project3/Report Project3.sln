@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report Project3", "Report Project3\Report Project3.rptproj", "{B9F9CC3E-8381-428A-920C-8685C0B65CAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Debug|Default.ActiveCfg = Debug
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Debug|Default.Build.0 = Debug
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Debug|Default.Deploy.0 = Debug
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.DebugLocal|Default.Build.0 = DebugLocal
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Release|Default.ActiveCfg = Release
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Release|Default.Build.0 = Release
+		{B9F9CC3E-8381-428A-920C-8685C0B65CAC}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

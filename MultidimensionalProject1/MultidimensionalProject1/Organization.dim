@@ -1,0 +1,222 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="15305d2b-01f3-4aaf-9347-630323ee77c0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Organization</ID>
+  <Name>Organization</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="176">
+            <Shape Id="Organization Name" Expanded="true">
+              <Attributes>
+                <Attribute Id="Organization Name" />
+                <Attribute Id="Company" />
+                <Attribute Id="Currency Code" />
+                <Attribute Id="Parent Organization Key" />
+                <Attribute Id="Ownership Percentage" />
+                <Attribute Id="Voting Rights Percentage" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fd393948-1fd1-4b82-af1b-d95c497a5daf">
+    <DataSourceViewID>MultidimensionalProject1</DataSourceViewID>
+  </Source>
+  <Type>Organization</Type>
+  <ErrorConfiguration dwd:design-time-name="286bc73a-2ea6-4ff3-95bb-b2d4f2acdddb">
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9c3d7905-46f6-4422-aa2a-04b18f90948a">
+      <ID>Parent Organization Key</ID>
+      <Name>Organizations</Name>
+      <Type>OrgTitle</Type>
+      <Usage>Parent</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d2781757-c976-4473-a013-bb9ba5fee1b8">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d12b278b-5bbb-436a-a0cf-99a9f719f2d3">
+            <TableID>Organization</TableID>
+            <ColumnID>Organizations</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <DefaultMember>[Organization].[Organizations].[Organization Level 01].&amp;[1]</DefaultMember>
+      <NamingTemplate>Organization Level *;</NamingTemplate>
+      <MembersWithData>NonLeafDataHidden</MembersWithData>
+      <UnaryOperatorColumn dwd:design-time-name="87c7eaed-ffc2-457d-a34f-53a14646ac3e">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0592a744-206a-4551-8a37-b40ea2f2079c">
+          <TableID>Organization</TableID>
+          <ColumnID>Organizations_UnaryOperator</ColumnID>
+        </Source>
+      </UnaryOperatorColumn>
+      <IsAggregatable>false</IsAggregatable>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d11404c7-149a-4580-a2d8-d512fd3c1458">
+      <ID>Organization Name</ID>
+      <Name>Organization</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="000fb53a-5027-48a4-8c39-41e295bf88b1">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e927e878-fc49-44c8-9c09-f1d900326ff1">
+            <TableID>Organization</TableID>
+            <ColumnID>Organization</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fdb2a68b-3ab2-4019-9386-c372a5a73216">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1cb0e0f2-e53d-4a95-a977-a2e5441ff88e">
+          <TableID>Organization</TableID>
+          <ColumnID>Organization_Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e18110f3-96be-49f9-b44f-e5d59902f59b">
+          <AttributeID>Parent Organization Key</AttributeID>
+          <Name>Organizations</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f0bc8402-1dc1-4277-a14b-fe7b53129555">
+          <AttributeID>Currency Code</AttributeID>
+          <Name>Currency Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="76b8f819-728f-4402-82d9-ef1711852a86">
+          <AttributeID>Company</AttributeID>
+          <Name>Company</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b64a642-8337-4c1e-9c15-bce251fff9f6">
+          <AttributeID>Ownership Percentage</AttributeID>
+          <Name>Ownership Percentage</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="72dab4c2-d8c1-4f73-af5e-cdd913f5901e">
+          <AttributeID>Voting Rights Percentage</AttributeID>
+          <Name>Voting Rights Percentage</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a0d86398-59c5-4aa5-93d2-37e09dc42343">
+      <ID>Currency Code</ID>
+      <Name>Currency Code</Name>
+      <Type>CurrencyIsoCode</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a999e1c3-4615-43f2-b821-11dd3e75906c">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bff6baa1-64f3-4000-9db8-f0264291be1d">
+            <TableID>Organization</TableID>
+            <ColumnID>Currency_Code</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <InstanceSelection>DropDown</InstanceSelection>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4467525d-d64c-4e3b-a929-dfe887a1f9a7">
+      <ID>Company</ID>
+      <Name>Company</Name>
+      <Type>Company</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3da535f3-ef22-46f1-898b-51cc5e97fff0">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b689f21-36ca-49f2-8e95-3b727bfe965f">
+            <TableID>Organization</TableID>
+            <ColumnID>Company</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dcf86f7d-0b11-4231-a257-8faf405adf56">
+      <ID>Ownership Percentage</ID>
+      <Name>Ownership Percentage</Name>
+      <Type>PercentOwnership</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70eea21d-95b6-4f60-9d42-63111104a644">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ecbe986-4368-4ea8-8118-fae232a825a8">
+            <TableID>Organization</TableID>
+            <ColumnID>Ownership_Percentage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="91c2f2e8-a73f-44b6-ace7-c816fbf939c5">
+      <ID>Voting Rights Percentage</ID>
+      <Name>Voting Rights Percentage</Name>
+      <Type>PercentVoteRight</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1cfef15a-ebe6-487a-9420-b18ca251ba9a">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69be1f0b-b173-4ae1-9ae0-0250e815af71">
+            <TableID>Organization</TableID>
+            <ColumnID>Voting_Rights_Percentage</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All Organizations</AttributeAllMemberName>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

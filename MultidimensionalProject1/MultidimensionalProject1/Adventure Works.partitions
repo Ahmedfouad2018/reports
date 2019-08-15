@@ -1,0 +1,236 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d2b855c7-2c46-44e9-acd1-01681733f020" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Internet Sales 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="eeb81cd5-5f48-4258-8305-9eda1d4f45ce">
+          <ID>Internet Sales</ID>
+          <Name>Internet Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="218b9703-f5a9-45e5-8e84-0ffbe99eacc9">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Internet_Sales</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Internet Orders</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e72ae92a-4b02-4335-b853-73e481545c36">
+          <ID>Internet Orders</ID>
+          <Name>Internet Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="771efe39-c385-4475-882b-bb4d640684dc">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Internet_Orders</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Internet Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6e671936-7f39-42e8-8d6f-740e33061760">
+          <ID>Internet Customers</ID>
+          <Name>Internet Customers</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="458d9ebc-c80b-4107-b63c-10ac25b87bdd">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Internet_Customers</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Internet Sales Reason</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ed6504f1-63ec-49a8-966a-756cef18fbb4">
+          <ID>Sales Reasons</ID>
+          <Name>Sales Reasons</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="8e0cb283-ef85-4721-a410-7529d78cf594">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Sales_Reasons</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Reseller Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c9b5fa72-0c7a-4d9c-8268-b1abfe01a1ad">
+          <ID>Reseller Sales</ID>
+          <Name>Reseller Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="8d895c75-3809-41dc-af84-7e5caef07b4c">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Reseller_Sales</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Reseller Orders</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9f9a09e5-8436-4cdb-aa0f-0bbf6c0a79ad">
+          <ID>Reseller Orders</ID>
+          <Name>Reseller Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="1028c1dd-1d5f-4ab7-b44a-5c6fdccf4fd5">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Reseller_Orders</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d4310f74-91e3-4429-96e4-e20ee807473a">
+          <ID>Sales Summary</ID>
+          <Name>Sales Summary</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="45227e55-c1d4-4261-9100-beb1cffe5ff6">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Sales_Summary</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sales Summary</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1e23de68-f7b5-489f-a6a7-639f6d07b444">
+          <ID>Sales Orders</ID>
+          <Name>Sales Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="8ae39351-f8ef-4758-b419-5d52fbabf8a8">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Sales_Orders</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Quota</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="57aa17a3-cd8d-4704-8faf-f30e6b903897">
+          <ID>Sales Targets</ID>
+          <Name>Sales Targets</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="25f4290d-f8f0-4cf6-8a6f-f8364dbb9578">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Sales_Targets</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Finance</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cb12a958-7340-48af-884f-63f70599c624">
+          <ID>Financial Reporting</ID>
+          <Name>Financial Reporting</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="9312c037-21c0-4161-8b11-ebf8966bca83">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Financial_Reporting</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Currency Rate</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6b425843-d3f3-4877-ae48-73b216a2cde1">
+          <ID>Exchange Rates</ID>
+          <Name>Exchange Rates</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="TableBinding" dwd:design-time-name="9d626674-8405-49e4-953e-34d2ebda4432">
+            <DataSourceID>ITI</DataSourceID>
+            <DbSchemaName>dbo</DbSchemaName>
+            <DbTableName>Exchange_Rates</DbTableName>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

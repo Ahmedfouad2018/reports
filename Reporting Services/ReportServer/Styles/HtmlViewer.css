@@ -1,0 +1,434 @@
+﻿
+BODY, FRAMESET, FORM {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline-color: orange;
+}
+
+.ImageWidget:hover {
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.DisabledButton input {
+    -webkit-filter: invert(.5);
+    filter: invert(.5);
+}
+
+.DocMapContentCell a span {
+    padding: 2px;
+}
+
+.DocMapContentCell div {
+    margin-top: 6px;
+}
+
+.MenuBarBkGnd .HoverButton {
+    background-color: #f4f4f4;
+}
+
+.ToolbarExport .MenuBarBkGnd .DisabledButton {
+    background-color: #FFFFFF;
+}
+
+.ToolbarExport .MenuBarBkGnd .HoverButton {
+    border-width: 0 0 1px 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+}
+
+.ToolbarExport .MenuBarBkGnd .DisabledButton {
+    border-width: 0 0 1px 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+}
+
+.documentMapHighlighting {
+    background-color: #FFC20D;
+}
+
+.searchHighlighting {
+    background-color: #FFC20D;
+}
+
+.PageNumberText, INPUT, BUTTON, SELECT, TABLE, BODY, FRAMESET, TEXTAREA {
+    font-size: 10pt;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#ctl39_ReportViewer > .PageNumberText, INPUT, BUTTON, SELECT, TABLE, BODY, FRAMESET, TEXTAREA {
+    font-size: 10pt;
+    font-family: "Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ActiveLink:link {
+    color: black;
+    text-decoration: none;
+}
+
+.ActiveLink:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.ActiveLink:visited {
+    color: black;
+    text-decoration: none;
+}
+
+    .ActiveLink:visited:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+.WaitControlBackground {
+    cursor: wait;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+}
+
+.WaitInfoCell {
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.WaitText {
+    font-size: 12pt;
+    font-family: "Segoe UI","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.CancelLinkDiv {
+    margin-top: 3px;
+}
+
+.CancelLinkText {
+    font-size: 10pt;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.ToolbarExport.WidgetSet .MenuBarBkGnd {
+    background-color: #fafafa;
+    border: 1px solid #DDDDDD;
+}
+
+.ParametersFrame {
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid #868686;
+}
+
+
+.ParamLabelCell {
+    padding: 5px;
+    padding-right: 0px;
+}
+
+.ParamEntryCell {
+    padding: 5px;
+}
+
+.ParamsGrid {
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+.InterParamPadding {
+    padding-left: 22px;
+}
+
+.EmptyDropDown {
+    width: 15ex;
+}
+
+.SubmitButtonCell {
+    border-left: 1px solid #868686;
+    align: center;
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+}
+
+
+.ToolBarButtonsCell {
+    padding: 0;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+}
+
+.ToolBarBackground {
+    background-color: #FFFFFF;
+}
+
+.ToolbarDocMapToggle {
+    display: inline;
+}
+
+.ToolbarPageNav {
+    display: inline;
+}
+
+    .ToolbarPageNav.WidgetSet {
+        border-width: 0 1px 0 0;
+        border-color: #DDDDDD;
+        border-style: solid;
+    }
+
+    .ToolbarPageNav input {
+        display: inline;
+        margin: 4px;
+        padding: 1px;
+    }
+
+    .ToolbarPageNav div > div {
+        padding-top: 5px;
+    }
+
+.ToolbarZoom {
+    display: inline;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+    .ToolbarZoom.WidgetSet {
+        border-width: 0 1px 0 0;
+        border-color: #DDDDDD;
+        border-style: solid;
+    }
+
+    .ToolbarZoom input {
+        margin-top: 5px;
+    }
+
+.ToolbarFind {
+    display: inline;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+    .ToolbarFind.WidgetSet {
+        border-width: 0 1px 0 0;
+        border-color: #DDDDDD;
+        border-style: solid;
+    }
+
+.ToolbarExport.WidgetSet {
+    display: inline-block;
+    border-width: 0 1px 0 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ToolbarExport :focus {
+    outline-style: none;
+}
+
+.ToolbarExport div {
+    padding-top: 5px;
+}
+
+.ToolbarExport img {
+    float: left;
+}
+
+    .ToolbarExport img:first-child {
+        padding: 7px;
+    }
+
+.ToolbarExport:hover {
+    background-color: #f4f4f4;
+}
+
+.ToolbarRefresh.WidgetSet {
+    display: inline;
+    border-width: 0 1px 0 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ToolbarRefresh input {
+    margin: 10px;
+    padding: 2px;
+}
+
+.ToolbarRefresh:hover {
+    background-color: #f4f4f4;
+}
+
+.ToolbarPrint.WidgetSet {
+    display: inline;
+    border-width: 0 1px 0 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ToolbarPrint:hover {
+    background-color: #f4f4f4;
+}
+
+.ToolbarPrint input {
+    margin: 10px;
+    padding: 2px;
+}
+
+.ToolbarPrint:hover {
+    background-color: #f4f4f4;
+}
+
+.ToolbarPowerBI {
+    display: inline;
+}
+
+    .ToolbarPowerBI:hover {
+        background-color: #f4f4f4;
+    }
+
+.ToolbarBack.WidgetSet {
+    display: inline;
+    border-width: 0 1px 0 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ToolbarBack input {
+    margin: 10px;
+    padding: 1px;
+}
+
+.ToolbarBack:hover {
+    background-color: #f4f4f4;
+}
+
+.ToolbarPowerBI.WidgetSet {
+    display: inline;
+    border-width: 0 1px 0 0;
+    border-color: #DDDDDD;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ToolbarPowerBI input {
+    margin: 9px;
+    padding: 1px;
+}
+
+.ToolbarPowerBI .InterWidgetGroup {
+    padding-right: 0;
+}
+
+.ShowHideParametersGroup {
+    padding-right: 4px;
+}
+
+.InterWidgetGroup {
+    padding-right: 8px;
+}
+
+.DisabledLink {
+    color: #212121;
+    text-decoration: none;
+    cursor: default;
+}
+
+    .DisabledLink:hover {
+        color: gray;
+        text-decoration: none;
+        cursor: default;
+    }
+
+.ImageWidget {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+}
+
+.DisabledTextBox {
+    background-color: #FFFFFF;
+}
+
+.WidgetSet {
+    height: 46px;
+}
+
+.WidgetSetSpacer {
+    padding-right: 20px;
+}
+
+.HoverButton {
+    height: 45px;
+    cursor: hand;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.NormalButton {
+    height: 45px;
+    cursor: hand;
+    font-size: 10pt;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.DisabledButton {
+    height: 45px;
+    cursor: default;
+    font-size: 10pt;
+    font-family: "Segoe UI", Verdana, Arial, Helvetica, sans-serif;
+}
+
+.SplitterNormal {
+    background-color: #DDDDDD;
+}
+
+.SplitterHover {
+    background-color: #DDDDDD;
+}
+
+.DocMapAndReportFrame {
+    border-top: 1px solid #868686;
+}
+
+.DocMapContentCell {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.DocMapTitle {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.DocMapFrame {
+    border-right: 1px solid #DDDDDD;
+}
+
+.DocMapBar {
+    background-color: rgba(243, 244, 246, 1);
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.ParamEntryCell input {
+    vertical-align: middle;
+}
